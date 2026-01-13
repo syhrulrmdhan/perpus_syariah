@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pustaka Syariah | by Syahrul Ramadhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;700&family=Playfair+Display:italic,wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-box">PS</div>
+                <div class="brand-info">
+                    <h1>Pustaka<span>Syariah</span></h1>
+                    <p class="signature">by Syahrul Ramadhan</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <span class="menu-label">Navigasi Utama</span>
+                <a href="#" class="nav-item active" data-filter="all">Beranda</a>
+                <a href="#" class="nav-item" data-filter="Kitab">Koleksi Kitab</a>
+                <a href="#" class="nav-item" data-filter="Ekonomi">Ekonomi Syariah</a>
+                <a href="#" class="nav-item" data-filter="Sejarah">Sejarah Islam</a>
+            </nav>
+
+            <div class="cart-status">
+                <p>Buku Dipilih: <strong id="cartCount">0</strong></p>
+                <button class="btn-checkout" id="checkoutBtn">Pinjam Sekarang</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Cari judul atau penulis...">
+                </div>
+                <div class="user-profile">
+                    <p id="currentDate"></p>
+                    <div class="avatar">SR</div>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="arabic-text">اقرأ باسم ربك الذي خلق</span>
+                    <h2>Perpustakaan Digital Syariah</h2>
+                    <p>Khazanah ilmu dalam genggaman. Temukan literatur terbaik untuk menunjang studi dan riset keislaman Anda.</p>
+                </div>
+            </section>
+
+            <div class="catalog-header">
+                <h3>Katalog Terkini</h3>
+                <div class="filter-stats">Menampilkan <span id="visibleCount">3</span> koleksi</div>
+            </div>
+
+            <div class="book-grid" id="bookGrid">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
